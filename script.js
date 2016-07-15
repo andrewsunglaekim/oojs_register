@@ -37,9 +37,7 @@ RegisterView.prototype = {
   renderEntries: function(){
     this.entriesContainer.empty()
     var entries = this.register.entries
-    console.log(entries);
     for (var i = 0; i < entries.length; i++){
-      console.log(entries[i]);
       this.entriesContainer.append($("<div class='entry'>" + entries[i] + "</div>"))
     }
   },
